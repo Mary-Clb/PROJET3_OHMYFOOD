@@ -1,0 +1,19 @@
+h1 {
+    font-family: $font-logo;
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0px 10px 0px;
+}
+body{
+    font-family: $font-txt;
+}
+h2{
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin: inherit;
+}
+p{
+    font-size: 1.1em;
+    font-weight: 300;
+    margin: inherit;
+}

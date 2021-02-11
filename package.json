@@ -1,0 +1,21 @@
+{
+  "name": "P3",
+  "version": "1.0.0",
+  "description": "OpenClassrooms Developpeur Web Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./Sass/main.scss:./Public/css/style.css --style compressed",
+    "prefix": "postcss ./Public/css/style.css --use autoprefixer -d ./Public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mary-Clb/MarieBressy_P3_02022021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mary-Clb/MarieBressy_P3_02022021/issues"
+  },
+  "homepage": "https://github.com/Mary-Clb/MarieBressy_P3_02022021#readme"
+}
