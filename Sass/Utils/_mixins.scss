@@ -1,0 +1,20 @@
+@mixin btn{
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    padding: 20px;
+    background: $btn-background;
+    font-family: $font-txt;
+    font-size: 1.1em;
+    width: fit-content;
+    color: white;
+    &:focus{
+        outline: 1px solid $color-primary;
+    }
+    &:hover{
+       opacity: 0.9;
+    }
+}
+
+
+
