@@ -1,0 +1,23 @@
+.function__step{
+    @include functions
+}
+.function__step__link{
+    @include link
+}
+.function__nb{
+    display: inline-block;
+    background-color: $color-primary;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+    position: absolute;
+    left: 10px;
+}
+.function__icon{
+    color: $color-icon;
+    font-size: 1.2em;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    padding-left: 15px;
+}
