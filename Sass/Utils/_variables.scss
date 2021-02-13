@@ -1,6 +1,7 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-icon: #7E7E7E;
 
 $section-background: #F6F6F6;
 $form-background: #EAEAEA;
@@ -10,6 +11,7 @@ $font-logo: 'Shrikhand', cursive;
 $font-txt: 'Roboto', sans-serif;
 
 $btn-background: linear-gradient($color-secondary,50%,$color-primary);
-
+$box-shadow-strong: 2px 10px 5px $form-top;
+$box-shadow: 2px 10px 10px $form-top;
 
 /*$map-icone: <i class="fas fa-search"></i>*/

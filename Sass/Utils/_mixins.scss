@@ -2,19 +2,47 @@
     height: 60px;
     border-radius: 30px;
     border: none;
+    text-decoration: none;
     padding: 20px;
     background: $btn-background;
     font-family: $font-txt;
     font-size: 1.1em;
     width: fit-content;
     color: white;
+    box-shadow: $box-shadow;
     &:focus{
         outline: 1px solid $color-primary;
     }
     &:hover{
-       opacity: 0.9;
+        box-shadow: $box-shadow-strong;
+        opacity: 0.9;
     }
 }
+
+@mixin functions{
+    height: 75px;
+    background-color: $section-background;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: $box-shadow;
+    &:hover{
+        background-color: lighten($color-primary,35%);
+        box-shadow: $box-shadow-strong;
+    }
+}
+
+@mixin link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
 
 
 
