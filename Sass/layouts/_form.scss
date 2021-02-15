@@ -17,11 +17,11 @@
     }
 }
 &__button{
-    height: 52px;
-    position: absolute;
-    top: 78px;
-    left: 80px;
+    width: 25%;
     text-align: right;
+    position: absolute;
+    height: 30px;
+    padding: 10px;
     border: none;
     background: transparent;
     font-size: 1.2em;
@@ -30,7 +30,8 @@
     }
 }
 &__icone{
-    padding-right: 20%;
+   padding-top: 5px;
+   color: black;
 }
 }
 
