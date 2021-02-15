@@ -1,0 +1,50 @@
+.restaurants{
+&__cards{
+    height: 250px;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: $box-shadow;
+}
+&__pic{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+&__link{
+    @include link
+}
+&__text{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    p{
+        text-align: left;
+        padding-top: 5px;
+    }
+    
+}
+&__heart{
+    display: block;
+    float: right;
+    padding: 20px;
+    position: relative;
+    bottom: 75px;
+    font-size: 1.5em;
+}
+&--new{
+    color: $color-new-txt;
+    background-color: $color-new;
+    padding: 10px;
+    border-radius: 2px;
+    position: relative;
+    bottom: 255px;
+    left: 50px;
+    float: right;
+}
+}
+

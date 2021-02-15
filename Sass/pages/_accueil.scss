@@ -1,3 +1,7 @@
+.header__arrow{
+    display: none;
+}
+
 .introduction{
     background-color: $section-background ;
     padding: 35px 35px 60px 35px;
@@ -13,11 +17,28 @@
     padding: 52px 20px 52px 20px;
     align-items: center;
     h2{
-        margin-bottom: 35px;
-        display: inline-block;
-        position: relative;
-        right: 75px;
+        @include section-title;
     }
 }
 
+.restaurants{
+    padding: 52px 20px 52px 20px;
+    background-color: $section-background;
+    h2{
+        @include section-title;
+        right: 97px;
+    }
+}
+
+@media screen and (min-width: map-get($breakpoints,tablet)) and (max-width: map-get($breakpoints,max-desktop)){
+    .desktop-sections-view{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .function{
+        width: 100%;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+}
 

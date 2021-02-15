@@ -1,5 +1,6 @@
 @import "./utils/mixins.scss";
 @import "./utils/variables.scss";
+@import "./utils/map.scss";
 
 @import "./base/base.scss";
 @import "./base/typography.scss";
@@ -8,5 +9,8 @@
 
 @import "./layouts/form.scss";
 @import "./layouts/functions.scss";
+@import "./layouts/header.scss";
+@import "./layouts/card.scss";
+@import "./layouts/footer.scss";
 
 @import "./pages/accueil.scss";

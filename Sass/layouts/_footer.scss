@@ -1,0 +1,32 @@
+footer{
+    background-color: $color-footer;
+    color: white;
+    padding: 25px;
+    text-align: left;
+    h2{
+        font-family: $font-logo;
+        text-align: inherit;
+        font-weight: lighter;
+    }
+    ul{
+        padding: 0px;
+        list-style-type: none;
+    }
+    li{
+        line-height: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+
+    }
+.footer__icon{
+    padding-right: 12px;
+    font-size: 1em;
+}
+.icon--size{
+    font-size: 0.8em;
+    padding-right: 8px;
+}
+}
