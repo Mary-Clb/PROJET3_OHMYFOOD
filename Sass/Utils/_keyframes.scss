@@ -1,0 +1,25 @@
+@keyframes heart-filler{
+    0%{
+        fill: white;
+    }
+    20%{
+        fill: $color-secondary;
+        opacity: 0.4;
+    }
+    40%{
+        fill: $color-secondary;
+        opacity: 0.6;
+    }
+    60%{
+        fill:$color-primary-light;
+        opacity: 0.8;
+    }
+    80%{
+        fill: $color-primary;
+        opacity: 0.9;
+    }
+    100%{
+        fill:$color-primary;
+        opacity: 1;
+    }
+}

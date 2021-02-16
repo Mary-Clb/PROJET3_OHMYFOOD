@@ -10,6 +10,8 @@
     width: fit-content;
     color: white;
     box-shadow: $box-shadow;
+    transition: opacity 400ms, box-shadow 500ms;
+    transition-delay: 0ms, 150ms;
     &:focus{
         outline: 1px solid $color-primary;
     }
@@ -52,6 +54,14 @@
 @mixin card{
     height: 250px;
     width: 85%;
+}
+@mixin after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 
