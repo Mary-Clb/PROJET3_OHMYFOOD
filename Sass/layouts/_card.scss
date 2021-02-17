@@ -29,16 +29,6 @@
     }
     
 }
-&__heart{
-    display: block;
-    float: right;
-    position: relative;
-    bottom: 75px;
-    padding: 20px;
-    width: 25px;
-    height: 25px;
-}
-
 &--new{
     color: $color-new-txt;
     background-color: $color-tertiary;
@@ -50,19 +40,6 @@
     float: right;
     }
 
-.heart__icon{
-    stroke-width: 20;
-    stroke: black;
-    fill: white;
-    position: absolute;
-    opacity: 1;
-    /*transition: all 1000ms;*/
-    &:hover{
-        animation: heart-filler 1s 150ms forwards ease-in;
-        animation-direction:alternate;   
-    } 
-    
-}
 }
 
 

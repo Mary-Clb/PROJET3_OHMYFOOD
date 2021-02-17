@@ -1,0 +1,29 @@
+.menu__card{
+    @include menu-card;
+    h3{
+        font-size: 1.2em;
+        margin-bottom: 0px;
+        padding-bottom: 5px;
+    }
+@media screen and (min-width: map-get($breakpoints,tablet)) and (max-width: map-get($breakpoints,max-desktop)){
+        width: 70%; 
+        justify-content: center; 
+}
+
+}
+.menu__card__txt{
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.menu__card__p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: inherit;
+}
+.menu__price{
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+}
