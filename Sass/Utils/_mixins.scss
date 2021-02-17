@@ -55,14 +55,25 @@
     height: 250px;
     width: 85%;
 }
-@mixin after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+@mixin heart-animation{
+    animation: heart-filler 1s 150ms forwards ease-in;
+    animation-direction:alternate;
 }
-
+@mixin menu-card{
+    height: 70px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: $box-shadow;
+    &:hover{
+        background-color: lighten($color-primary,35%);
+        box-shadow: $box-shadow-strong;
+    }
+}
 
 

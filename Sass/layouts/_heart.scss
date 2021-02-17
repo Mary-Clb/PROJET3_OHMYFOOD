@@ -1,0 +1,20 @@
+.heart{
+    display: block;
+    float: right;
+    position: relative;
+    bottom: 75px;
+    padding: 20px;
+    width: 25px;
+    height: 25px;
+    &__icon{
+        stroke-width: 20;
+        stroke: black;
+        fill: white;
+        position: absolute;
+        opacity: 1;
+        /*transition: all 1000ms;*/
+        &:hover{
+            @include heart-animation   
+        }
+    }
+}

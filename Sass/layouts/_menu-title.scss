@@ -1,0 +1,31 @@
+.menu__title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: map-get($breakpoints,tablet)) and (max-width: map-get($breakpoints,max-desktop)){
+           justify-content: center;
+           grid-column: 1/3;
+           grid-row: 1/2;
+    }
+    h2{
+        font-size: 1.7em;
+        @media screen and (min-width: map-get($breakpoints,tablet)) and (max-width: map-get($breakpoints,max-desktop)){
+        padding-right: 50px;   
+        }
+    }
+
+}
+.menu__heart{
+    width: 30px;
+    height: 70px;
+    padding: 15px;
+&__icon{
+    fill: transparent;
+    stroke-width: 20;
+    stroke: black;
+    &:hover{
+        @include heart-animation   
+    }
+}
+}
