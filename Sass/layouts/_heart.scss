@@ -16,5 +16,8 @@
         &:hover{
             @include heart-animation   
         }
+        &:active{
+            @include heart-animation
+        }
     }
 }

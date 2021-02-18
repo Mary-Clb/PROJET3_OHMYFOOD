@@ -1,0 +1,54 @@
+.loader{
+   position: absolute;
+   z-index: 1;
+   transform: translateY(-9999px);
+   width: 100%;
+   height: 100%;
+   background-color: $form-top;
+   display: flex;
+   flex-direction: column-reverse;
+   justify-content: center;
+   align-items: center;
+   animation: loader-opacity 3s ease-in-out both;
+   &__progress-bar{
+       width: 95%;
+       height: 25px;
+       background: white;
+       border: 1px groove $color-primary;
+       padding: 2px;
+       display: flex;
+       align-items: center;
+       &--color{
+        width: 100%;
+        position: relative;
+        background: $btn-background;
+        height: 23px;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: loader-fill 3s ease-in-out both;
+       }
+   }
+   &__txt{
+       font-family: $font-logo;
+       font-weight: lighter;
+       padding-top: 15px;
+       width: 100%;
+       text-align: center;
+       font-size: 1.6em;
+   }
+    /*.loader__progress-bar--color{
+        
+        transform: scaleX(0);
+        transition: transform 3.5s 150ms ease-in-out; 
+        transform-origin: left;
+        &:hover{/*
+        
+            
+        /*transform: scaleX(1);
+        animation-name: loader-fill 3s 150ms backwards ease-in-out;
+        animation-direction: alternate;*/
+        
+    }
+   
+
+
