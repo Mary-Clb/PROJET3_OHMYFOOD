@@ -22,6 +22,7 @@
 }
 
 @mixin functions{
+    position: relative;
     height: 75px;
     background-color: $section-background;
     border-radius: 20px;
@@ -42,13 +43,8 @@
     color: black;
     font-size: 1.1em;
     font-weight: bold;
+    width: 100%;
 
-}
-@mixin section-title{
-    margin-bottom: 35px;
-    display: inline-block;
-    position: relative;
-    right: 75px;
 }
 
 @mixin card{
@@ -56,7 +52,7 @@
     width: 85%;
 }
 @mixin heart-animation{
-    animation: heart-filler 1s 150ms forwards ease-in;
+    animation: heart-filler 1s 150ms forwards ease-in 2;
     animation-direction:alternate;
 }
 @mixin menu-card{
@@ -76,5 +72,11 @@
     }
 }
 
+@mixin container-md-view{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
 
 

@@ -4,6 +4,7 @@
         font-size: 1.2em;
         margin-bottom: 0px;
         padding-bottom: 5px;
+        overflow: hidden;
     }
 @media screen and (min-width: map-get($breakpoints,tablet)) and (max-width: map-get($breakpoints,max-desktop)){
         width: 70%; 
