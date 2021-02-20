@@ -8,89 +8,113 @@
     p{
         margin-bottom: 35px;
     }
-
 }
 .function{
     padding: 52px 20px 52px 20px;
-    align-items: center;
+    align-items: flex-start;
     h2{
-        @include section-title;
+        padding-bottom: $padding-title;
+        
+
     }
 }
-
 .restaurants{
     padding: 52px 20px 52px 20px;
     background-color: $section-background;
+    align-items: flex-start;
     h2{
-        @include section-title;
-        right: 97px;
+        padding-bottom: $padding-title;
     }
 }
 
-@media screen and (min-width: map-get($breakpoints,tablet)) and (max-width: map-get($breakpoints,max-desktop)){
-    .desktop-sections-view{
-        display: flex;
-        flex-direction: row-reverse;
-    }
-    h2{
-        font-size: $title-size-desktop;
-    }
-    .form__button{
-        width: 40%;
+/*MEDIUM SCREEN ViEW*/
+@media screen and (min-width: map-get($breakpoints,screen-md)) and (max-width:map-get($breakpoints,screen-md-max)){
+    .function-container{
+        @include container-md-view
     }
     .introduction{
-        width: 60%;
-        background: linear-gradient($section-background,60%,white);
+        padding: 55px 35px 75px 35px;
     }
+
     .function{
-        padding: 50px;
-        width: 40%;
-        align-items: flex-start;
-        justify-content: flex-start;
-        &__nb{
-            left: 30px;
-        }
+        width: 50%;
+        padding: 52px 0px 52px 0px;
+        align-items: center;
         h2{
-            display: inherit;
-            position: inherit;
-            text-align: left;
-        
+            margin-right: auto;
         }
-    }
-    .restaurants{
-        padding: 40px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 1fr 1fr;
-        column-gap: 5%;
-        row-gap: 2%;
-        h2{
-        grid-column: 1/2;
-        grid-row: 1/2;
-        text-align: left;
-        position: inherit; 
+    &__step{
+        max-width: 80%;
     }
     
     }
-    .card--1{
-        grid-column: 1/2;
-        grid-row: 2/3;
+
+    .restaurants-container{
+        @include container-md-view;
+        background-color: $section-background;
     }
-    .card--2{
-        grid-column: 2/3;
-        grid-row: 2/3;
+    .restaurants{
+        max-width: 55%;
+        padding: 52px 0px 52px 0px;
+        &__card{
+           max-width: 50%;
+        }
     }
-    .card--3{
-        grid-column: 1/2;
-        grid-row: 3/4;
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    } 
+}
+/*LARGE SCREEN VIEW*/
+@media screen and (min-width:map-get($breakpoints,screen-lg)){
+    .function-container{
+        @include container-md-view
     }
-    .card--4{
-        grid-column: 2/3;
-        grid-row: 3/4;
+    .introduction{
+        padding: 55px 35px 75px 35px;
     }
 
-    footer{
-       text-align: center; 
+    .function{
+        width: 50%;
+        padding: 52px 0px 52px 0px;
+        align-items: center;
+        h2{
+            margin-right: auto;
+            padding-left: 120px;
+        }
+    &__step{
+        max-width: 50%;
     }
-}
+    }
+    .restaurants-container{
+        @include container-md-view;
+        background-color: $section-background;
+    }
+    .restaurants{
+        width: 50%;
+        padding: 52px 0px 52px 0px;
+        align-items: center;
+        h2{
+            margin-right: auto;
+            padding-left: 120px;
+        }
+        &__cards{
+           max-width: 70%;
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+} 
+    
+    
+  
+
 

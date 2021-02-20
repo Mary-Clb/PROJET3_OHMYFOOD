@@ -1,6 +1,7 @@
 $breakpoints: (
-    mobile:768px,
-    tablet:769px,
-    desktop:1024px,
-    max-desktop:1980px,
+    screen-sm: 768px,
+    screen-md: 769px,
+    screen-md-max: 1023px,
+    screen-lg:1024px,
+    screen-lg-max:1200px,
 )
