@@ -79,4 +79,25 @@
         justify-content: center;
 }
 
+@mixin card-animation{
+    animation: cards-animation 1.5s $anim-delay forwards linear;
+}
 
+@mixin green-block-animation{
+    animation: green-block 0.5s $anim-delay forwards linear;
+    /*transform-origin: left;*/
+}
+
+@mixin green-block-icon-animation{
+    animation: green-block-icon 0.6s 280ms backwards linear;
+    animation-direction: left;
+}
+@mixin menu-card-hover{
+    animation: menu-card-hover 1s 200ms forwards linear;
+}
+@mixin price-txt{
+    animation: price-text 0.4s $anim-delay forwards linear;
+}
+@mixin card-reduce-hover{
+    animation: card-reduce-hover 0.4s $anim-delay forwards linear;
+}
