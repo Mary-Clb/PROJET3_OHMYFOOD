@@ -4,9 +4,9 @@
    transform: translateY(-9999px);
    width: 100%;
    height: 100%;
-   background-color: $form-top;
+   background-color: $color-footer;
    display: flex;
-   flex-direction: column-reverse;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    animation: loader-opacity 3s ease-in-out both;
@@ -21,32 +21,30 @@
        &--color{
         width: 100%;
         position: relative;
-        background: $btn-background;
+        background: $heart-background;
         height: 23px;
         transform: scaleX(0);
         transform-origin: left;
-        animation: loader-fill 3s ease-in-out both;
+        animation: loader-fill 3s ease-out both;
        }
+   }
+   &__logo{
+       font-family: $font-logo;
+       font-size: 3em;
+       color: $color-tertiary;
    }
    &__txt{
        font-family: $font-logo;
+       color: white;
        font-weight: lighter;
        padding-top: 15px;
        width: 100%;
        text-align: center;
-       font-size: 1.6em;
+       font-size: 1.5em;
+       padding-bottom: 30px;
+       animation: loader-txt 3s ease-out both;
    }
-    /*.loader__progress-bar--color{
-        
-        transform: scaleX(0);
-        transition: transform 3.5s 150ms ease-in-out; 
-        transform-origin: left;
-        &:hover{/*
-        
-            
-        /*transform: scaleX(1);
-        animation-name: loader-fill 3s 150ms backwards ease-in-out;
-        animation-direction: alternate;*/
+   
         
     }
    

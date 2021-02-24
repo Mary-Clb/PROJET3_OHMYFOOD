@@ -3,18 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    .heart, .heart-line{
+        top: 0px;
+        right: 0px;
+    }
 
 }
-.menu__heart{
-    width: 30px;
-    height: 70px;
-    padding: 15px;
-&__icon{
-    fill: transparent;
-    stroke-width: 20;
-    stroke: black;
-    &:hover{
-        @include heart-animation   
-    }
-}
-}
+

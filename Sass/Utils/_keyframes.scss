@@ -49,32 +49,50 @@
     }
     25%{
         transform: translateY(0);
-        opacity:1;
-        
-        
+        opacity:1;     
     }
     50%{
-        opacity:0.8;
+        opacity:1;
         transform: translateY(0);
         
     }
     85%{
-        opacity:0.6;
+        opacity:0.7;
         transform: translateY(0);
     }
     90%{
-        opacity:0.2;
-        transform: translateY(-50);
+        opacity:0.6;
+        transform: translateY(0);
     }
     95%{
-        opacity:0.1;
-        transform: translateY(-200);
+        opacity:0.5;
+        transform: translateY(0);
     }
     100%{
         opacity: 0;
-        transform: translateY(-600);
+        transform: translateY(0);
     }
 }
+@keyframes loader-txt{
+    0%{
+        opacity: 0;
+    }
+    17%{
+        opacity: 0.2;
+    }
+    23%{
+        opacity: 0.5
+    }
+    45%{
+        opacity: 1;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 @keyframes cards-animation{
     0%{
