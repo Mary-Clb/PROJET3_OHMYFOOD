@@ -9,7 +9,7 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   animation: loader-opacity 3s ease-in-out both;
+   animation: loader-translate 3s ease-in-out both;
    &__progress-bar{
        width: 95%;
        height: 25px;

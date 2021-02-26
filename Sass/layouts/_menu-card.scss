@@ -22,7 +22,7 @@
         .menu__price{
             transform: translateX(-80px);
         }
-
+        background-color: white;
         }
     }
     h3{
@@ -50,7 +50,7 @@
     font-weight: bold;
     overflow: hidden;
     transform: translateX(0);
-    transition: transform 650ms linear;
+    transition: transform 600ms linear;
 
 }
 
@@ -67,7 +67,7 @@
     align-items: center;
     justify-content: center;
     transform: translateX(100px);
-    transition: transform 650ms linear;
+    transition: transform 600ms linear;
     /*opacity: 0;*/
 }
 
@@ -75,5 +75,5 @@
     font-size: 1.5em;
     color: white;
     transform: rotateZ(0.5turn);
-    transition: transform 750ms ease-in $anim-delay;
+    transition: transform 700ms ease-in $anim-delay;
 }

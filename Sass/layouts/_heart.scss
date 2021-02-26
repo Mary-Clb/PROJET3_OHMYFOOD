@@ -1,7 +1,23 @@
+.heart-link{
+   width: 50px;
+   height: 50px;
+   position: relative;
+    &:hover{
+        .heart{
+            opacity: 1;
+        }
+    }
+    &:active{
+        .heart{
+            opacity: 1;
+        }
+    }
+
+}
 .heart, .heart-line{
     position: absolute;
-    right: 35px;
-    top: 25px;
+    right: 0px;
+    top: 10px;
     font-size: 2em; 
 }
 
@@ -11,14 +27,13 @@
     background: $heart-background;
     -webkit-background-clip: text;
     transition: opacity 750ms ease-in;
-    &:hover{
-        opacity: 1;
-    }
-    &:active{
-        opacity: 1;
-    }
+    z-index: 9;
 }    
 
 .heart-line{
     color: black;
+    background-color: transparent;
+    -webkit-background-clip: text;
+    z-index: 10;
+    
 }
