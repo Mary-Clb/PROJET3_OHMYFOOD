@@ -22,9 +22,8 @@
 
 &__text{
     display: flex;
-    flex-direction: column;
+    height: fit-content;
     padding: 15px;
-    position: relative;
     p{
         text-align: left;
         padding-top: 5px;

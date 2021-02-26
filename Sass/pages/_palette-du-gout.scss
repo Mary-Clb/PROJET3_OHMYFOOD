@@ -63,7 +63,7 @@
 /*MEDIUM SCREEN ViEW*/
 @media screen and (min-width: map-get($breakpoints,screen-md)) and (max-width:map-get($breakpoints,screen-md-max)){
     .header-container{
-        max-width: 60%;
+        max-width: 100%;
         display: inherit;
     }
     .header__logo{
@@ -74,7 +74,7 @@
         display: flex;
         justify-content: center;
         img{
-            max-width: 63%;
+            max-width: 100%;
         }
     }
     .menu{
@@ -95,7 +95,7 @@
 /*LARGE SCREEN VIEW*/
 @media screen and (min-width:map-get($breakpoints,screen-lg)){
     .header-container{
-        max-width: 60%;
+        max-width: 100%;
         display: inherit;
     }
     .header__logo{
@@ -106,7 +106,7 @@
         display: flex;
         justify-content: center;
         img{
-            max-width: 65%;
+            max-width: 100%;
         }
     }
     .menu{
