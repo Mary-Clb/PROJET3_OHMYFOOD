@@ -51,10 +51,7 @@
     height: 250px;
     width: 85%;
 }
-@mixin heart-animation{
-    animation: heart-filler 1s 150ms forwards ease-in 2;
-    animation-direction: alternate;
-}
+
 @mixin menu-card{
     height: 70px;
     padding: 10px;
