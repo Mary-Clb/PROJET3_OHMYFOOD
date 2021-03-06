@@ -17,7 +17,8 @@
     padding: 40px 20px 40px 20px;
     margin-top: -25px;
     h2{
-    font-family: $font-logo;
+    font-family: $font-txt;
+    font-size: 1.2em;
     padding-bottom: 40px;
     
 }
@@ -43,13 +44,13 @@
 .menu__carte__title--plat{
         &::after{
             content:"PLAT";
-            right: 54px;
+            right: 55px;
         }
 }
 .menu__carte__title--desserts{
         &::after{
             content:"DESS";
-            right: 88px;
+            right: 90px;
         }
 }
 }
