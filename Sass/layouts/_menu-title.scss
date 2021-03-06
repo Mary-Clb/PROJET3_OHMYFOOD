@@ -4,8 +4,11 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    h1{
+        @include txt-h1
+    }
     .heart-link{
-        bottom: 25px;
+        bottom: 35px;
     }
     }
 

@@ -80,3 +80,9 @@
     animation: cards-animation 1.5s $anim-delay forwards linear;
 }
 
+@mixin txt-h1{
+    font-family: $font-logo;
+    padding-bottom: 40px;
+    font-size: 1.6em;
+    margin: inherit;
+}
